@@ -13,11 +13,21 @@
 			$( "#formUser" ).submit(function( event ) {
 				var canSubmit = true;
 				var user = $("#formUser input[name=user]").val();
+<<<<<<< HEAD
+=======
+				//var ser = $(this).serialize();
+				//$(this).addClass('bg-primary')
+				  //alert( user );
+>>>>>>> master
 				  if(user.length < 6)
 				  {
 				  	canSubmit = false;
 				  	$("#alertMsg").show();
+<<<<<<< HEAD
 				  	$("#alertMsg").html("Requiere 	 caracteres como minimo");
+=======
+				  	$("#alertMsg").html("Requiere 6 caracteres como minimo");
+>>>>>>> master
 				  }
 				  if(!canSubmit)
 				  	event.preventDefault();
